@@ -11,12 +11,44 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/pasteles',
+    name: 'pasteles',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/PastelesView.vue')
+  },
+  {
+    path: '/pedidos',
+    name: 'pedidos',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "pedidos" */ '../views/PedidosView.vue')
+  },
+  {
+    path: '/inventario',
+    name: 'inventario',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "inventario" */ '../views/InventarioView.vue')
+  },
+  {
+    path: '/revisarPedido',
+    name: 'revisarPedido',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "inventario" */ '../views/RevisarPedidoView.vue')
+  },
+  {
+    path: '/pedidoRealizado',
+    name: 'pedidoRealizado',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "pedidoRealizado" */ '../views/PedidoRealizadoView.vue')
   }
 ]
 
@@ -25,3 +57,4 @@ const router = new VueRouter({
 })
 
 export default router
+
